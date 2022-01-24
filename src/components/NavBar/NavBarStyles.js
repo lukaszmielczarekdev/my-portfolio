@@ -37,6 +37,13 @@ export const NavigationTitle = styled.div`
   }
 `;
 
+//NavSection
+export const IconsSection = styled.div`
+  display: flex;
+  align-content: center;
+  justify-content: ${(props) => (props.center ? "center" : "")};
+`;
+
 // NavLink
 export const NavigationLink = styled.a`
   font-size: 2rem;
