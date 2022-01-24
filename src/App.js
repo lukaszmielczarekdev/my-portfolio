@@ -5,19 +5,22 @@ import Projects from "./components/Projects/Projects";
 import Tools from "./components/Tools/Tools";
 import TimeLine from "./components/TimeLine/TimeLine";
 import Footer from "./components/Footer/Footer";
+import ThemeManager from "./themes/themeManager";
 
 const App = () => {
   return (
-    <AppContainer>
-      <NavBar />
-      <main>
-        <Hero />
-        <Projects />
-        <Tools />
-        <TimeLine />
-      </main>
-      <Footer />
-    </AppContainer>
+    <ThemeManager>
+      <AppContainer>
+        <NavBar />
+        <main>
+          <Hero />
+          <Projects />
+          <Tools />
+          <TimeLine />
+        </main>
+        <Footer />
+      </AppContainer>
+    </ThemeManager>
   );
 };
 
