@@ -45,7 +45,7 @@ export const SectionTitle = styled.h2`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 3rem;
     font-size: ${(props) => (props.main ? "1.5rem" : "1.8rem")};
     line-height: ${(props) => (props.main ? "1.8rem" : "2.2rem")};
@@ -58,10 +58,12 @@ export const SectionTitle = styled.h2`
 export const SectionText = styled.p`
   max-width: 800px;
   font-size: 1.5rem;
-  line-height: 2.5rem;
+  line-height: ${(props) => (props.high ? "2.5rem" : "2rem")};
   font-weight: 300;
+  padding: ${(props) => (props.padding ? "1rem" : "")};
   padding-bottom: 1.8rem;
   color: rgba(255, 255, 255, 0.5);
+  text-align: ${(props) => (props.justify ? "justify" : "")};
 
   @media ${(props) => props.theme.breakpoints.lg} {
     max-width: 650px;
@@ -73,6 +75,30 @@ export const SectionText = styled.p`
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 1rem;
     line-height: 1.3rem;
+    padding: 0;
     padding-bottom: 1rem;
+  }
+`;
+
+export const SectionDivider = styled.div`
+  width: 64px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: white;
+  background: ${(props) =>
+    props.colorAlt
+      ? "linear-gradient(270deg, #F46737 0%, #945DD6 100%)"
+      : "linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)"};
+
+  margin: ${(props) => (props.divider ? "4rem 0" : "")};
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 48px;
+    height: 4px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 32px;
+    height: 2px;
   }
 `;

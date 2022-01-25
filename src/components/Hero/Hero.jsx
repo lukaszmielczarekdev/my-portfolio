@@ -16,7 +16,7 @@ const Hero = () => {
           Hi, my name is Łukasz. <br />
           I'm a frontend developer.
         </SectionTitle>
-        <SectionText>
+        <SectionText high>
           Passionate about technology, programming and learning new things.
         </SectionText>
         <IconsSection>
