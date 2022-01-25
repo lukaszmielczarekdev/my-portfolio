@@ -34,13 +34,13 @@ export const SectionTitle = styled.h2`
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 0.5rem;
+  margin-bottom: ${(props) => (props.separate ? "2rem" : "0.5rem")};
   padding: ${(props) => (props.main ? "4rem 0 1rem" : "0")};
 
   @media ${(props) => props.theme.breakpoints.lg} {
     font-size: ${(props) => (props.main ? "2.2rem" : "1.8rem")};
     line-height: ${(props) => (props.main ? "2.7rem" : "2.2rem")};
-    margin-bottom: 0.8rem;
+    margin-bottom: ${(props) => (props.separate ? "1.5rem" : "0.0rem")};
     padding: ${(props) => (props.main ? "2rem 0 1rem" : "0")};
   }
 
@@ -49,7 +49,7 @@ export const SectionTitle = styled.h2`
     line-height: 3rem;
     font-size: ${(props) => (props.main ? "1.5rem" : "1.8rem")};
     line-height: ${(props) => (props.main ? "1.8rem" : "2.2rem")};
-    margin-bottom: 0.5rem;
+    margin-bottom: ${(props) => (props.separate ? "1.5rem" : "0.5rem")};
     padding: ${(props) => (props.main ? "1rem 0 0.5rem" : "0")};
     max-width: 100%;
     text-align: center;
@@ -79,6 +79,7 @@ export const SectionText = styled.p`
     line-height: 1.3rem;
     padding: 0;
     padding-bottom: 1rem;
+    text-align: ${(props) => (props.center ? "center" : "")};
   }
 `;
 
@@ -102,5 +103,10 @@ export const SectionDivider = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 32px;
     height: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
   }
 `;

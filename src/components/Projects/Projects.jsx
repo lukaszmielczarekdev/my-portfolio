@@ -24,7 +24,7 @@ const Projects = () => {
     <Section column id={"projects"}>
       <SectionDivider />
       <br />
-      <SectionTitle>Projects</SectionTitle>
+      <SectionTitle separate>Projects</SectionTitle>
       <GridContainer>
         {projects.map(
           ({ title, description, image, tags, source, visit, id }) => (
