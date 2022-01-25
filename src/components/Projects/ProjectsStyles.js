@@ -72,8 +72,8 @@ export const UtilityList = styled.ul`
 
 export const ExternalLink = styled.a`
   color: white;
-  font-size: 1rem;
-  padding: 0.8rem 1rem;
+  font-size: 0.8rem;
+  padding: 0.6rem 0.8rem;
   border: 1px solid white;
   border-radius: 10px;
   transition: 0.5s;
@@ -82,12 +82,17 @@ export const ExternalLink = styled.a`
     background: white;
     color: black;
   }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 0.6rem;
+    padding: 0.4rem 0.6rem;
+  }
 `;
 
 export const TagList = styled.ul`
   display: flex;
   justify-content: space-evenly;
-  padding: 1.5rem;
+  padding: 0.5rem;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     flex-direction: column;

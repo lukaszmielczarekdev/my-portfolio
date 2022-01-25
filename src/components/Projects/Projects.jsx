@@ -36,7 +36,7 @@ const Projects = () => {
                 <HeaderThree title>{title}</HeaderThree>
                 <Hr />
               </TitleContent>
-              <SectionText padding justify>
+              <SectionText padding justify smaller>
                 {description}
               </SectionText>
               <div>
