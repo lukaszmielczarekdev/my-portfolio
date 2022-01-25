@@ -13,6 +13,10 @@ export const IconsSection = styled.div`
   align-content: center;
   margin-top: ${(props) => (props.margin ? "5rem" : "")};
   justify-content: ${(props) => (props.center ? "center" : "")};
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    align-self: center;
+  }
 `;
 
 // Icon

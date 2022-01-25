@@ -52,6 +52,8 @@ export const SectionTitle = styled.h2`
     margin-bottom: 0.5rem;
     padding: ${(props) => (props.main ? "1rem 0 0.5rem" : "0")};
     max-width: 100%;
+    text-align: center;
+    align-self: center;
   }
 `;
 
