@@ -1,5 +1,11 @@
 import React from "react";
-import { DiReact, DiJavascript1, DiCss3, DiHtml5 } from "react-icons/di";
+import {
+  DiReact,
+  DiJavascript1,
+  DiCss3,
+  DiHtml5,
+  DiJira,
+} from "react-icons/di";
 import { SiStyledcomponents, SiJest } from "react-icons/si";
 import { ToolsList, ToolsItem, ToolsParagraph, ToolsTitle } from "./ToolStyles";
 import {
@@ -36,7 +42,11 @@ const Tools = () => {
         </ToolsItem>
         <ToolsItem>
           <SiStyledcomponents size={"2rem"} style={{ marginRight: "0.5rem" }} />
-          Styled&nbsp;Components
+          Styled Components
+        </ToolsItem>
+        <ToolsItem>
+          <DiJira size={"2rem"} />
+          JIRA
         </ToolsItem>
       </ToolsList>
     </Section>
