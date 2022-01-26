@@ -46,7 +46,7 @@ export const HeaderThree = styled.h3`
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding: 0.5rem 0;
+  padding: 1rem 0.2rem;
   font-size: ${(props) => (props.title ? "2rem" : "1.5rem")};
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -93,14 +93,15 @@ export const TagList = styled.ul`
   display: flex;
   justify-content: space-evenly;
   padding: 0.5rem;
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    flex-direction: column;
-  }
+  flex-wrap: wrap;
 `;
 
 export const Tag = styled.li`
   color: white;
-  margin: 0.3rem;
+  margin: 0.5rem;
   font-size: 1rem;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 0.8rem;
+  }
 `;

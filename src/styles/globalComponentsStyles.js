@@ -75,8 +75,6 @@ export const SectionText = styled.p`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: ${(props) => (props.smaller ? "0.8rem" : "1rem")};
-    line-height: 1.3rem;
     padding: 0;
     padding-bottom: 1rem;
     text-align: ${(props) => (props.center ? "center" : "")};

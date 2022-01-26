@@ -8,7 +8,7 @@ export const projects = [
     description:
       "The application uses a gamification system to activate and motivate the user to learn English, who, as a reward for learning and overcoming challenges, wins trophies and gains access to the next levels of the game. The application has a built-in test creation mechanism and in addition to overcoming story challenges, it offers the user to create their own challenges based on the provided materials.",
     image: ri,
-    tags: ["React", "JavaScript", "External API"],
+    tags: ["React", "JavaScript", "Jest", "External API"],
     source: "https://github.com/lukaszmielczarekdev/rocket-english",
     visit: "https://rocket-english.pages.dev",
     id: 0,
@@ -30,7 +30,7 @@ export const projects = [
     image: portfolioOld,
     tags: ["JavaScript"],
     source: "https://github.com/lukaszmielczarekdev/portfolio",
-    visit: "https://lukasz-mielczarek.pages.dev",
+    visit: "https://mielczarek-lukasz.pages.dev",
     id: 2,
   },
   {
