@@ -62,7 +62,6 @@ export const SectionText = styled.p`
   font-size: ${(props) => (props.smaller ? "1.2rem" : "1.5rem")};
   line-height: ${(props) => (props.high ? "2.5rem" : "2rem")};
   font-weight: 300;
-  padding: ${(props) => (props.padding ? "1rem" : "")};
   padding-bottom: 1.8rem;
   color: rgba(255, 255, 255, 0.5);
   text-align: ${(props) => (props.justify ? "justify" : "")};
@@ -75,8 +74,7 @@ export const SectionText = styled.p`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 0;
-    padding-bottom: 1rem;
+    padding: ${(props) => (props.padding ? "1rem" : "")};
     text-align: ${(props) => (props.center ? "center" : "")};
   }
 `;
