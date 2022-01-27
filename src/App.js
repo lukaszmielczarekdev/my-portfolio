@@ -12,12 +12,10 @@ const App = () => {
     <ThemeManager>
       <AppContainer>
         <NavBar />
-        <main>
-          <Hero />
-          <Projects />
-          <Tools />
-          <TimeLine />
-        </main>
+        <Hero />
+        <Projects />
+        <Tools />
+        <TimeLine />
         <Footer />
       </AppContainer>
     </ThemeManager>

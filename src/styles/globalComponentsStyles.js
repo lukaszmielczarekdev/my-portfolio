@@ -55,6 +55,10 @@ export const SectionTitle = styled.h2`
     text-align: center;
     align-self: center;
   }
+  @media ${(props) => props.theme.breakpoints.smlandscape} {
+    font-size: ${(props) => (props.main ? "1.5rem" : "1rem")};
+    line-height: ${(props) => (props.main ? "1.8rem" : "1.5rem")};
+  }
 `;
 
 export const SectionText = styled.p`

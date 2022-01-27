@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const WelcomeSection = styled.div`
   width: 100%;
+  min-height: 90vh;
   flex-direction: column;
   display: flex;
   margin: 0 auto;
@@ -11,7 +12,10 @@ export const WelcomeSection = styled.div`
 export const IconsSection = styled.div`
   display: flex;
   align-content: center;
-  margin-top: ${(props) => (props.margin ? "5rem" : "")};
+  position: absolute;
+  bottom: 3rem;
+  right: 1rem;
+  left: 1rem;
   justify-content: ${(props) => (props.center ? "center" : "")};
 
   @media ${(props) => props.theme.breakpoints.sm} {
