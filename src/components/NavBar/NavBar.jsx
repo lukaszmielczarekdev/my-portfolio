@@ -14,7 +14,7 @@ const NavBar = () => {
       </NavSection>
       <NavSection>
         <NavigationLink href="#projects">Projects</NavigationLink>
-        <NavigationLink href="#technologies">Technologies</NavigationLink>
+        <NavigationLink href="#tools">Tools</NavigationLink>
         <NavigationLink href="#about">About</NavigationLink>
       </NavSection>
     </Container>
