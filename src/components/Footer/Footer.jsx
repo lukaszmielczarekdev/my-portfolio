@@ -27,13 +27,13 @@ const Footer = () => {
               href={"https://github.com/lukaszmielczarekdev"}
               target="_blank"
             >
-              <AiFillGithub size={"2.5rem"} />
+              <AiFillGithub size={"2rem"} />
             </Icon>
             <Icon
               href={"https://www.linkedin.com/in/łukasz-mielczarek-6282aa214/"}
               target="_blank"
             >
-              <AiFillLinkedin size={"2.5rem"} />
+              <AiFillLinkedin size={"2rem"} />
             </Icon>
           </IconsSection>
         </LinkColumn>

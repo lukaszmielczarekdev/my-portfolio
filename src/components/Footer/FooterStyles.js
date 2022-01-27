@@ -3,12 +3,12 @@ import styled from "styled-components";
 // Wrapper
 export const FooterContainer = styled.section`
   max-width: 80%;
-  padding: 2rem 3rem 2.5rem 2rem;
+  padding: 2rem;
   margin: 1rem auto;
   box-sizing: content-box;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 0 1rem 3rem;
+    padding: 0 1rem;
   }
 `;
 
@@ -17,7 +17,6 @@ export const LinkItem = styled.a`
   font-size: 1.2rem;
   line-height: 1.8rem;
   color: rgba(255, 255, 255, 0.75);
-  margin-bottom: 1rem;
   transition: 0.3s ease;
   position: relative;
   left: 0;
@@ -25,6 +24,10 @@ export const LinkItem = styled.a`
   &:hover {
     color: #fff;
     transform: scale(1.05);
+  }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    margin-bottom: 0.5rem;
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
@@ -36,7 +39,6 @@ export const LinkItem = styled.a`
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 0.8rem;
     line-height: 1rem;
-    margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
   }
@@ -90,13 +92,16 @@ export const LinkTitle = styled.h4`
   line-height: 1.2rem;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.4);
-  margin-bottom: 1rem;
   margin-right: 1rem;
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    margin-right: 0rem;
+    margin-bottom: 0.5rem;
+  }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 0.8rem;
     line-height: 1rem;
-    margin-bottom: 0.5rem;
   }
 `;
 
@@ -117,7 +122,7 @@ export const IconsSection = styled.div`
 export const Icon = styled.a`
   transition: 0.4s ease;
   color: rgba(255, 255, 255, 0.7);
-  margin: 0.5rem;
+  margin: 0 0.5rem 0 0.5rem;
   &:hover {
     color: white;
     opacity: 1;
