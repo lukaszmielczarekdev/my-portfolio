@@ -5,6 +5,10 @@ export const Img = styled.img`
   height: 100%;
   object-fit: cover;
   overflow: hidden;
+  transition: 0.4s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
 
 export const GridContainer = styled.section`
@@ -71,7 +75,7 @@ export const UtilityList = styled.ul`
 `;
 
 export const ExternalLink = styled.a`
-  color: white;
+  color: rgba(255, 255, 255, 0.75);
   font-size: 0.8rem;
   padding: 0.6rem 0.8rem;
   border: 1px solid white;
@@ -79,7 +83,7 @@ export const ExternalLink = styled.a`
   transition: 0.5s;
   margin: 1rem;
   &:hover {
-    background: white;
+    background: rgba(255, 255, 255, 0.75);
     color: black;
   }
 
@@ -97,7 +101,7 @@ export const TagList = styled.ul`
 `;
 
 export const Tag = styled.li`
-  color: white;
+  color: rgba(255, 255, 255, 0.75);
   margin: 0.5rem;
   font-size: 1rem;
 

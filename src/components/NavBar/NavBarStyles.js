@@ -29,7 +29,7 @@ export const NavSection = styled.div`
 export const NavigationTitle = styled.div`
   font-size: 1.2rem;
   font-weight: bold;
-  color: white;
+  color: rgba(255, 255, 255, 0.85);
   transition: 0.4s ease;
   margin: 1.5rem;
   @media ${(props) => props.theme.breakpoints.sm} {

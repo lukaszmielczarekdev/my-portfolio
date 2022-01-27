@@ -21,7 +21,7 @@ const Tools = () => {
       <br />
       <SectionTitle separate>Tools</SectionTitle>
       <ToolsTitle>Front-End</ToolsTitle>
-      <ToolsParagraph>Experience with</ToolsParagraph>
+      <ToolsParagraph>Experience with:</ToolsParagraph>
       <ToolsList margin>
         <ToolsItem>
           <DiReact size={"2rem"} style={{ marginRight: "0.2rem" }} /> React.js

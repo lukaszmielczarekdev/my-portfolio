@@ -7,6 +7,7 @@ export const ToolsTitle = styled.h4`
   line-height: 2rem;
   letter-spacing: 0.02em;
   color: #ffffff;
+  margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 
   @media ${(props) => props.theme.breakpoints.md} {
@@ -25,15 +26,10 @@ export const ToolsTitle = styled.h4`
 
 // Tools paragraph
 export const ToolsParagraph = styled.p`
-  font-size: 1.2rem;
-  line-height: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.3rem;
   color: rgba(255, 255, 255, 0.75);
   display: inline-block;
-
-  @media ${(props) => props.theme.breakpoints.md} {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 0.8rem;
@@ -46,6 +42,7 @@ export const ToolsParagraph = styled.p`
 
 // Tools item
 export const ToolsItem = styled.li`
+  color: rgba(255, 255, 255, 0.75);
   font-size: 1rem;
   line-height: 1.2rem;
   display: flex;

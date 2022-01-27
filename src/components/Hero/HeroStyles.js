@@ -6,6 +6,11 @@ export const WelcomeSection = styled.div`
   flex-direction: column;
   display: flex;
   margin: 0 auto;
+  justify-content: center;
+
+  @media ${(props) => props.theme.breakpoints.smlandscape} {
+    justify-content: flex-start;
+  }
 `;
 
 //NavSection
@@ -17,6 +22,10 @@ export const IconsSection = styled.div`
   right: 1rem;
   left: 1rem;
   justify-content: ${(props) => (props.center ? "center" : "")};
+
+  @media ${(props) => props.theme.breakpoints.smlandscape} {
+    bottom: 1rem;
+  }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     align-self: center;

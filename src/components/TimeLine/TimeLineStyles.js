@@ -7,10 +7,6 @@ export const CarouselItemContainer = styled.div`
   overflow: visible;
   position: relative;
   height: fit-content;
-  transition: transform 0.2s;
-  &:hover {
-    transform: scale(1.05);
-  }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     justify-items: center;
