@@ -4,7 +4,6 @@ export const Section = styled.section`
   display: ${(props) => (props.grid ? "grid" : "flex")};
   flex-direction: ${(props) => (props.column ? "column" : "row")};
   padding: ${(props) => (props.nopadding ? "0" : "3rem")};
-  margin: 0 auto;
   box-sizing: content-box;
   grid-template-columns: 1fr 1fr;
 
@@ -17,6 +16,11 @@ export const Section = styled.section`
     padding: ${(props) => (props.nopadding ? "0" : "1rem")};
     width: calc(100vw - 2rem);
     flex-direction: column;
+  }
+
+  @media ${(props) => props.theme.breakpoints.smlandscape} {
+    padding-top: ${(props) => (props.hero ? "1rem" : "")};
+    justify-content: flex-start;
   }
 `;
 

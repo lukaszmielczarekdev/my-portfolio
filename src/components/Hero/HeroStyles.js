@@ -7,6 +7,7 @@ export const WelcomeSection = styled.div`
   display: flex;
   margin: 0 auto;
   justify-content: center;
+  position: relative;
 
   @media ${(props) => props.theme.breakpoints.smlandscape} {
     justify-content: flex-start;
@@ -19,12 +20,12 @@ export const IconsSection = styled.div`
   align-content: center;
   position: absolute;
   bottom: 3rem;
-  right: 1rem;
-  left: 1rem;
+  left: 0;
+  right: 0;
   justify-content: ${(props) => (props.center ? "center" : "")};
 
   @media ${(props) => props.theme.breakpoints.smlandscape} {
-    bottom: 1rem;
+    bottom: 3rem;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {

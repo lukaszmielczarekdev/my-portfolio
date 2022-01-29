@@ -29,12 +29,12 @@ export const NavSection = styled.div`
 export const NavigationTitle = styled.div`
   font-size: 1.2rem;
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.5);
   transition: 0.4s ease;
-  margin: 1.5rem;
+  margin: 1rem;
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 1rem;
-    margin: 1rem;
+    margin: 0.5rem;
   }
 `;
 
@@ -51,7 +51,7 @@ export const NavigationLink = styled.a`
   font-weight: bold;
   color: rgba(255, 255, 255, 0.7);
   transition: 0.4s ease;
-  margin: 1.5rem;
+  margin: 1rem;
   &:hover {
     color: white;
     opacity: 1;
@@ -59,6 +59,6 @@ export const NavigationLink = styled.a`
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 1rem;
-    margin: 1rem;
+    margin: 0.5rem;
   }
 `;

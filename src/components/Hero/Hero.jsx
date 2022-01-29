@@ -9,7 +9,7 @@ import { TiArrowDownOutline } from "react-icons/ti";
 
 const Hero = () => {
   return (
-    <Section column>
+    <Section column hero>
       <WelcomeSection>
         <SectionTitle main center>
           Hi, my name is Łukasz. <br />
