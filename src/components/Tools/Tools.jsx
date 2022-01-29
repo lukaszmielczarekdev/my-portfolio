@@ -24,24 +24,24 @@ const Tools = () => {
       <ToolsParagraph>Experience with:</ToolsParagraph>
       <ToolsList margin>
         <ToolsItem>
-          <DiReact size={"2rem"} style={{ marginRight: "0.2rem" }} /> React.js
+          <DiReact size={"2rem"} style={{ marginRight: "0.1rem" }} /> React.js
         </ToolsItem>
         <ToolsItem>
-          <DiJavascript1 size={"2rem"} style={{ marginRight: "0.2rem" }} />
+          <DiJavascript1 size={"2rem"} style={{ marginRight: "0.1rem" }} />
           JavaScript
         </ToolsItem>
         <ToolsItem>
-          <DiCss3 size={"2rem"} style={{ marginRight: "0.2rem" }} /> CSS&nbsp;3
+          <DiCss3 size={"2rem"} style={{ marginRight: "0.1rem" }} /> CSS&nbsp;3
         </ToolsItem>
         <ToolsItem>
-          <DiHtml5 size={"2rem"} style={{ marginRight: "0.2rem" }} />
+          <DiHtml5 size={"2rem"} style={{ marginRight: "0.1rem" }} />
           HTML&nbsp;5
         </ToolsItem>
         <ToolsItem>
-          <SiJest size={"1.5rem"} style={{ marginRight: "0.5rem" }} /> Jest
+          <SiJest size={"1.5rem"} style={{ marginRight: "0.3rem" }} /> Jest
         </ToolsItem>
         <ToolsItem>
-          <SiStyledcomponents size={"2rem"} style={{ marginRight: "0.5rem" }} />
+          <SiStyledcomponents size={"2rem"} style={{ marginRight: "0.3rem" }} />
           Styled Components
         </ToolsItem>
         <ToolsItem>
