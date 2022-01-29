@@ -8,7 +8,7 @@ export const Section = styled.section`
   grid-template-columns: 1fr 1fr;
 
   @media ${(props) => props.theme.breakpoints.md} {
-    padding: ${(props) => (props.nopadding ? "0" : "1.5rem")};
+    padding: ${(props) => (props.nopadding ? "0" : "1.5rem 1rem 1.5rem 1rem")};
     flex-direction: column;
   }
 
@@ -19,7 +19,7 @@ export const Section = styled.section`
   }
 
   @media ${(props) => props.theme.breakpoints.smlandscape} {
-    padding-top: ${(props) => (props.hero ? "1rem" : "")};
+    padding-top: ${(props) => (props.hero ? ".5rem" : "")};
     justify-content: flex-start;
   }
 `;

@@ -8,13 +8,16 @@ export const FooterContainer = styled.section`
   box-sizing: content-box;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 0 1rem;
+    padding: 2rem 0 0 0;
+  }
+  @media ${(props) => props.theme.breakpoints.smlandscape} {
+    padding: 0;
   }
 `;
 
 // Link item
 export const LinkItem = styled.a`
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.8rem;
   color: rgba(255, 255, 255, 0.75);
   transition: 0.3s ease;
@@ -31,7 +34,7 @@ export const LinkItem = styled.a`
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1.5rem;
     display: flex;
   }
@@ -127,5 +130,23 @@ export const Icon = styled.a`
     opacity: 1;
     transform: scale(1.2);
     cursor: pointer;
+  }
+`;
+
+// Footer paragraph
+export const FooterParagraph = styled.p`
+  margin: 2rem 0 2rem 0;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
   }
 `;

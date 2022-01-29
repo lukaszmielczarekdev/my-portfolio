@@ -12,7 +12,7 @@ const Hero = () => {
     <Section column hero>
       <WelcomeSection>
         <SectionTitle main center>
-          Hi, my name is Łukasz. <br />
+          Hi, my name is Łukasz, <br />
           I'm a frontend developer.
         </SectionTitle>
         <SectionText high center>

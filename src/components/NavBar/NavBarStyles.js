@@ -7,7 +7,7 @@ export const Container = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 0.5rem;
-  padding: 0.5rem;
+  padding: 1rem 3rem 0rem 3rem;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
@@ -15,6 +15,7 @@ export const Container = styled.div`
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0.2rem;
     grid-row-gap: 0.2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
   }
 `;
 
@@ -29,12 +30,11 @@ export const NavSection = styled.div`
 export const NavigationTitle = styled.div`
   font-size: 1.2rem;
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.5);
-  transition: 0.4s ease;
+  color: rgba(255, 255, 255, 0.8);
   margin: 1rem;
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 1rem;
-    margin: 0.5rem;
+    margin-top: 0.5rem;
   }
 `;
 
@@ -49,7 +49,7 @@ export const IconsSection = styled.div`
 export const NavigationLink = styled.a`
   font-size: 1.2rem;
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.6);
   transition: 0.4s ease;
   margin: 1rem;
   &:hover {

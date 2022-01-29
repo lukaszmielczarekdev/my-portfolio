@@ -7,12 +7,14 @@ import {
   LinkItem,
   ItemList,
   LinkTitle,
+  FooterParagraph,
 } from "./FooterStyles";
 import { Icon } from "./FooterStyles";
 
 const Footer = () => {
   return (
     <FooterContainer>
+      <FooterParagraph>Thanks for scrolling.</FooterParagraph>
       <ItemList>
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>

@@ -10,7 +10,9 @@ const NavBar = () => {
   return (
     <Container>
       <NavSection>
-        <NavigationTitle>Portfolio</NavigationTitle>
+        <NavigationTitle>
+          &#60;&nbsp;&#47;&nbsp;&#62;&nbsp;|&nbsp;Łukasz&nbsp;Mielczarek
+        </NavigationTitle>
       </NavSection>
       <NavSection>
         <NavigationLink href="#projects">Projects</NavigationLink>
