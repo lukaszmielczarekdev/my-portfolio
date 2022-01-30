@@ -9,7 +9,8 @@ export const WelcomeSection = styled.div`
   justify-content: center;
   position: relative;
 
-  @media ${(props) => props.theme.breakpoints.smlandscape} {
+  @media ${(props) => props.theme.breakpoints.sm} {
+    min-height: 80vh;
     justify-content: flex-start;
   }
 `;
@@ -25,11 +26,12 @@ export const IconsSection = styled.div`
   justify-content: ${(props) => (props.center ? "center" : "")};
 
   @media ${(props) => props.theme.breakpoints.smlandscape} {
-    bottom: 3rem;
+    bottom: 0.5rem;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     align-self: center;
+    bottom: 0.5rem;
   }
 `;
 
@@ -48,14 +50,59 @@ export const Icon = styled.a`
 
 // Logo
 export const Img = styled.img`
-  /* position: absolute;
-  top: 5rem; */
-  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  width: 50%;
   height: auto;
   opacity: 90%;
   z-index: -1;
-  transition: 0.4s ease;
-  &:hover {
-    transform: scale(1.05);
+  position: absolute;
+  right: 0;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    top: auto;
+    width: 50%;
+    right: 5%;
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 35%;
+  }
+
+  @media ${(props) => props.theme.breakpoints.smlandscape} {
+    width: 35%;
+  }
+
+  @media ${(props) => props.theme.breakpoints.xslandscape} {
+    display: none;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    top: 0;
+    left: 0;
+    width: 60%;
+    right: 0;
+    position: relative;
+  }
+  @media ${(props) => props.theme.breakpoints.xs} {
+    width: 20%;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    animation: logo-spin infinite 150s linear;
+  }
+
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
 `;

@@ -13,7 +13,8 @@ export const Section = styled.section`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: ${(props) => (props.nopadding ? "0" : "3rem 1rem 1rem 1rem")};
+    padding: ${(props) =>
+      props.hero ? "0 1rem 0 1rem" : "3rem 1rem 1rem 1rem"};
     width: calc(100vw - 2rem);
     flex-direction: column;
   }

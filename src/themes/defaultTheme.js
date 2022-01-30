@@ -13,7 +13,9 @@ export const defaultTheme = {
   },
 
   breakpoints: {
+    xslandscape: "screen and (max-height: 320px)",
     smlandscape: "screen and (max-height: 480px)",
+    xs: "screen and (max-width: 320px)",
     sm: "screen and (max-width: 640px)",
     md: "screen and (max-width: 768px)",
     lg: "screen and (max-width: 1024px)",

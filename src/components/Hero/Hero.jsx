@@ -12,6 +12,7 @@ const Hero = () => {
   return (
     <Section column hero>
       <WelcomeSection>
+        <Img src={atom} />
         <SectionTitle main center>
           Hi, my name is Łukasz, <br />
           I'm a frontend developer.
@@ -28,8 +29,5 @@ const Hero = () => {
     </Section>
   );
 };
-{
-  /* <Img src={atom} /> */
-}
 
 export default Hero;
