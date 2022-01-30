@@ -23,7 +23,6 @@ const Projects = () => {
   return (
     <Section column id={"projects"}>
       <SectionDivider />
-      <br />
       <SectionTitle separate>Projects</SectionTitle>
       <GridContainer>
         {projects.map(

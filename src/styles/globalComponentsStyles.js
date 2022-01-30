@@ -8,12 +8,12 @@ export const Section = styled.section`
   grid-template-columns: 1fr 1fr;
 
   @media ${(props) => props.theme.breakpoints.md} {
-    padding: ${(props) => (props.nopadding ? "0" : "1.5rem 1rem 1.5rem 1rem")};
+    padding: ${(props) => (props.nopadding ? "0" : "3rem")};
     flex-direction: column;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: ${(props) => (props.nopadding ? "0" : "1rem")};
+    padding: ${(props) => (props.nopadding ? "0" : "3rem 1rem 1rem 1rem")};
     width: calc(100vw - 2rem);
     flex-direction: column;
   }
@@ -38,12 +38,14 @@ export const SectionTitle = styled.h2`
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-top: ${(props) => (props.separate ? "1.5rem" : "0.5rem")};
   margin-bottom: ${(props) => (props.separate ? "1.5rem" : "0.5rem")};
   padding: ${(props) => (props.main ? "4rem 0 1rem" : "0")};
 
   @media ${(props) => props.theme.breakpoints.lg} {
     font-size: ${(props) => (props.main ? "2.2rem" : "2.2rem")};
     line-height: ${(props) => (props.main ? "2.7rem" : "2.5rem")};
+    margin-top: ${(props) => (props.separate ? "1rem" : "0.5rem")};
     margin-bottom: ${(props) => (props.separate ? "1rem" : "0.5rem")};
     padding: ${(props) => (props.main ? "2rem 0 1rem" : "0")};
   }
@@ -53,6 +55,7 @@ export const SectionTitle = styled.h2`
     line-height: 3rem;
     font-size: ${(props) => (props.main ? "1.8rem" : "2rem")};
     line-height: ${(props) => (props.main ? "2.2rem" : "2.2rem")};
+    margin-top: ${(props) => (props.separate ? "1rem" : "0.5rem")};
     margin-bottom: ${(props) => (props.separate ? "1rem" : "0.5rem")};
     padding: ${(props) => (props.main ? "1rem 0 0.5rem" : "0")};
     max-width: 100%;

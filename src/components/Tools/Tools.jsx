@@ -18,7 +18,6 @@ const Tools = () => {
   return (
     <Section column id={"tools"}>
       <SectionDivider />
-      <br />
       <SectionTitle separate>Tools</SectionTitle>
       <ToolsTitle>Front-End</ToolsTitle>
       <ToolsParagraph>Experience with:</ToolsParagraph>

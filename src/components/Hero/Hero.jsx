@@ -4,8 +4,9 @@ import {
   SectionTitle,
   SectionText,
 } from "../../styles/globalComponentsStyles";
-import { WelcomeSection, Icon, IconsSection } from "./HeroStyles";
+import { WelcomeSection, Icon, IconsSection, Img } from "./HeroStyles";
 import { TiArrowDownOutline } from "react-icons/ti";
+import atom from "../../images/atom.svg";
 
 const Hero = () => {
   return (
@@ -27,5 +28,8 @@ const Hero = () => {
     </Section>
   );
 };
+{
+  /* <Img src={atom} /> */
+}
 
 export default Hero;

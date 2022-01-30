@@ -20,7 +20,6 @@ const TimeLine = () => {
   return (
     <Section column id={"about"}>
       <SectionDivider />
-      <br />
       <SectionTitle separate>About Me</SectionTitle>
       <SectionText padding center>
         Programming is my passion that requires a lot of commitment. I have been

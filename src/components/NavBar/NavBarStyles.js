@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 // Container
 export const Container = styled.div`
-  display: grid;
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 0.5rem;
@@ -32,9 +32,10 @@ export const NavigationTitle = styled.div`
   font-weight: bold;
   color: rgba(255, 255, 255, 0.8);
   margin: 1rem;
-  @media ${(props) => props.theme.breakpoints.sm} {
+
+  @media ${(props) => props.theme.breakpoints.smlandscape} {
     font-size: 1rem;
-    margin-top: 0.5rem;
+    margin: 0.5rem;
   }
 `;
 
@@ -57,6 +58,12 @@ export const NavigationLink = styled.a`
     opacity: 1;
     cursor: pointer;
   }
+
+  @media ${(props) => props.theme.breakpoints.smlandscape} {
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
+
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 1rem;
     margin: 0.5rem;

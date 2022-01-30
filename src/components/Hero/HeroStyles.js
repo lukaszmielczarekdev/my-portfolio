@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const WelcomeSection = styled.div`
   width: 100%;
-  min-height: 90vh;
+  min-height: 85vh;
   flex-direction: column;
   display: flex;
   margin: 0 auto;
@@ -43,5 +43,19 @@ export const Icon = styled.a`
     opacity: 1;
     transform: scale(1.2);
     cursor: pointer;
+  }
+`;
+
+// Logo
+export const Img = styled.img`
+  /* position: absolute;
+  top: 5rem; */
+  width: 100%;
+  height: auto;
+  opacity: 90%;
+  z-index: -1;
+  transition: 0.4s ease;
+  &:hover {
+    transform: scale(1.05);
   }
 `;
