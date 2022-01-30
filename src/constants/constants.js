@@ -1,4 +1,5 @@
 import portfolioOld from "../images/portfolio-old.jpg";
+import portfolio from "../images/portfolio.jpg";
 import ri from "../images/ri.jpg";
 import wyin from "../images/wyin.jpg";
 
@@ -37,7 +38,7 @@ export const projects = [
     title: "Portfolio (advanced)",
     description:
       "A new version of the portfolio using more advanced solutions. Here, I used tools that I have learned from the time I built the first version of the portfolio.",
-    image: portfolioOld,
+    image: portfolio,
     tags: ["React.js", "JavaScript", "Styled Components"],
     source: "https://github.com/lukaszmielczarekdev/my-portfolio",
     visit: "https://lukasz-mielczarek.pages.dev",
