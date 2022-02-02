@@ -10,7 +10,7 @@ export const WelcomeSection = styled.div`
   position: relative;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    min-height: 80vh;
+    min-height: 85vh;
   }
 `;
 
@@ -80,8 +80,9 @@ export const Img = styled.img`
 
   @media ${(props) => props.theme.breakpoints.smlandscape} {
     top: auto;
+    position: absolute;
     width: 30%;
-    right: 5%;
+    right: 0;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
