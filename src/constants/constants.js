@@ -19,7 +19,7 @@ export const projects = [
     description:
       "The app converts the current time to a specific year and displays historical events based on that date. It also allows the user to search for a specific date or draw a random one.",
     image: wyin,
-    tags: ["React.js", "JavaScript", "External API"],
+    tags: ["React.js", "JavaScript", "External API", "JIRA", "Teamwork"],
     source: "https://gitlab.com/niemamemaila/wyin-fe-webapp",
     visit: "https://app-ci.spio-wyin.workers.dev",
     id: 1,
