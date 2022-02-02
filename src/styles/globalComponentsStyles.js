@@ -76,18 +76,26 @@ export const SectionText = styled.p`
   font-weight: 300;
   padding-bottom: 1.8rem;
   color: rgba(255, 255, 255, 0.5);
+  max-width: ${(props) => (props.main ? "50%" : "")};
   text-align: ${(props) => (props.justify ? "justify" : "")};
 
   @media ${(props) => props.theme.breakpoints.lg} {
     max-width: 650px;
+    max-width: ${(props) => (props.main ? "50%" : "")};
     font-size: ${(props) => (props.smaller ? "1rem" : "1.2rem")};
     line-height: 1.5rem;
     padding-bottom: 1.5rem;
   }
 
+  @media ${(props) => props.theme.breakpoints.smlandscape} {
+    max-width: ${(props) => (props.main ? "50%" : "")};
+  }
+
   @media ${(props) => props.theme.breakpoints.sm} {
+    max-width: ${(props) => (props.main ? "80%" : "")};
     padding: ${(props) => (props.padding ? "1rem" : "")};
     text-align: ${(props) => (props.center ? "center" : "")};
+    align-self: center;
   }
 `;
 

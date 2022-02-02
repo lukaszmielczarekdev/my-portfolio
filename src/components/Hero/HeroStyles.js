@@ -15,23 +15,32 @@ export const WelcomeSection = styled.div`
   }
 `;
 
-//NavSection
-export const IconsSection = styled.div`
-  display: flex;
-  align-content: center;
-  position: absolute;
-  bottom: 3rem;
-  left: 0;
-  right: 0;
-  justify-content: ${(props) => (props.center ? "center" : "")};
+//Call to action
+export const LinkButton = styled.a`
+  color: rgba(255, 255, 255, 0.75);
+  background: transparent;
+  font-size: 1rem;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid white;
+  border-radius: 10px;
+  transition: 0.5s;
+  width: 15%;
+  width: fit-content;
+  &:hover {
+    background: rgba(255, 255, 255, 0.75);
+    color: black;
+  }
 
   @media ${(props) => props.theme.breakpoints.smlandscape} {
-    bottom: 0.5rem;
+    width: 30%;
+    width: fit-content;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 1rem;
     align-self: center;
-    bottom: 0.5rem;
+    width: auto;
+    width: fit-content;
   }
 `;
 

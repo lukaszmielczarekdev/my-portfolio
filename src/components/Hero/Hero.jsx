@@ -4,8 +4,7 @@ import {
   SectionTitle,
   SectionText,
 } from "../../styles/globalComponentsStyles";
-import { WelcomeSection, Icon, IconsSection, Img } from "./HeroStyles";
-import { TiArrowDownOutline } from "react-icons/ti";
+import { WelcomeSection, Img, LinkButton } from "./HeroStyles";
 import atom from "../../images/atom.svg";
 
 const Hero = () => {
@@ -17,14 +16,10 @@ const Hero = () => {
           Hi, my name is Łukasz, <br />
           I'm a frontend developer.
         </SectionTitle>
-        <SectionText high center>
+        <SectionText high center main>
           Passionate about technology, programming and learning new things.
         </SectionText>
-        <IconsSection center margin>
-          <Icon href={"#projects"}>
-            <TiArrowDownOutline size={"2.5rem"} />
-          </Icon>
-        </IconsSection>
+        <LinkButton href={"#projects"}>Learn more...</LinkButton>
       </WelcomeSection>
     </Section>
   );
