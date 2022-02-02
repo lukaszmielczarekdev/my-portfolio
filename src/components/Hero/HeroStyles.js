@@ -11,7 +11,6 @@ export const WelcomeSection = styled.div`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     min-height: 80vh;
-    justify-content: flex-start;
   }
 `;
 
@@ -63,43 +62,35 @@ export const Img = styled.img`
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
-  width: 50%;
+  width: 40%;
   height: auto;
   opacity: 90%;
   z-index: -1;
   position: absolute;
   right: 0;
-  -webkit-align-self: center;
   -ms-flex-item-align: center;
-  align-self: center;
-
-  @media ${(props) => props.theme.breakpoints.lg} {
-    top: auto;
-    width: 50%;
-    right: 5%;
-  }
 
   @media ${(props) => props.theme.breakpoints.md} {
-    width: 35%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: relative;
+    width: 30%;
   }
 
   @media ${(props) => props.theme.breakpoints.smlandscape} {
-    width: 35%;
-  }
-
-  @media ${(props) => props.theme.breakpoints.xslandscape} {
-    display: none;
+    top: auto;
+    width: 30%;
+    right: 5%;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     top: 0;
     left: 0;
-    width: 60%;
+    width: 50%;
     right: 0;
     position: relative;
-  }
-  @media ${(props) => props.theme.breakpoints.xs} {
-    width: 20%;
+    align-self: center;
   }
 
   @media (prefers-reduced-motion: no-preference) {
