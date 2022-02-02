@@ -3,6 +3,7 @@ import styled from "styled-components";
 // Container
 export const Container = styled.div`
   display: flex;
+  align-items: center;
   justify-content: space-between;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
@@ -28,10 +29,14 @@ export const NavSection = styled.div`
 
 // NavTitle
 export const NavigationTitle = styled.div`
-  font-size: 1.2rem;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.8);
   margin: 1rem;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
 
   @media ${(props) => props.theme.breakpoints.smlandscape} {
     font-size: 1rem;
