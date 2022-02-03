@@ -19,7 +19,7 @@ const Hero = () => {
         <SectionText high center main>
           Passionate about technology, programming and learning new things.
         </SectionText>
-        <LinkButton href={"#projects"}>Learn more...</LinkButton>
+        <LinkButton href={"#projects"}>Learn more</LinkButton>
       </WelcomeSection>
     </Section>
   );

@@ -79,7 +79,7 @@ export const ExternalLink = styled.a`
   border: 1px solid white;
   border-radius: 10px;
   transition: 0.5s;
-  margin: 1rem;
+  margin: 0.8rem;
   &:hover {
     background: rgba(255, 255, 255, 0.75);
     color: black;
@@ -101,7 +101,7 @@ export const TagList = styled.ul`
 export const Tag = styled.li`
   color: rgba(255, 255, 255, 0.75);
   margin: 0.5rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 0.8rem;

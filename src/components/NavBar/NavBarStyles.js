@@ -32,6 +32,8 @@ export const NavigationTitle = styled.div`
   font-weight: bold;
   color: rgba(255, 255, 255, 0.8);
   margin: 1rem;
+  font-size: 1.2rem;
+  align-content: center;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 1rem;

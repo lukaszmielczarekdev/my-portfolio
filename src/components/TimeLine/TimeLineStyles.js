@@ -54,7 +54,7 @@ export const CarouselTitle = styled.h3`
 `;
 
 export const CarouselText = styled.p`
-  font-size: ${(props) => (props.smaller ? "1.2rem" : "1.5rem")};
+  font-size: ${(props) => (props.smaller ? "1rem" : "1.5rem")};
   line-height: ${(props) => (props.high ? "2.5rem" : "2rem")};
   font-weight: 300;
   padding: ${(props) => (props.padding ? "0.5rem" : "0")};

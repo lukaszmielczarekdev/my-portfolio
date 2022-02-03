@@ -62,7 +62,7 @@ export const Img = styled.img`
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
-  width: 40%;
+  width: 35%;
   height: auto;
   opacity: 90%;
   z-index: -1;
@@ -71,8 +71,7 @@ export const Img = styled.img`
   -ms-flex-item-align: center;
 
   @media ${(props) => props.theme.breakpoints.md} {
-    top: 0;
-    left: 0;
+    top: auto;
     right: 0;
     position: relative;
     width: 30%;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 // Tools title
 export const ToolsTitle = styled.h4`
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 2rem;
   letter-spacing: 0.02em;
   color: #ffffff;
@@ -11,12 +11,12 @@ export const ToolsTitle = styled.h4`
   margin-bottom: 0.5rem;
 
   @media ${(props) => props.theme.breakpoints.md} {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 1.8rem;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.5rem;
     align-items: center;
     justify-content: center;
