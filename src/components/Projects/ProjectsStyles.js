@@ -49,10 +49,10 @@ export const HeaderThree = styled.h3`
   background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 1rem 0.2rem;
-  font-size: ${(props) => (props.title ? "2rem" : "1.5rem")};
+  font-size: ${(props) => (props.bigger ? "2rem" : "1.5rem")};
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: ${(props) => (props.title ? "1.5rem" : "1rem")};
+    font-size: ${(props) => (props.bigger ? "1.5rem" : "1rem")};
   }
 `;
 

@@ -42,7 +42,7 @@ export const projects = [
     tags: ["React.js", "JavaScript", "Styled Components"],
     source: "https://github.com/lukaszmielczarekdev/my-portfolio",
     visit: "https://lukasz-mielczarek.pages.dev",
-    id: 2,
+    id: 3,
   },
 ];
 

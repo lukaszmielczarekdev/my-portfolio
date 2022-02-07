@@ -32,7 +32,7 @@ const Projects = () => {
                 <Img src={image} />
               </a>
               <TitleContent>
-                <HeaderThree title>{title}</HeaderThree>
+                <HeaderThree bigger>{title}</HeaderThree>
                 <Hr />
               </TitleContent>
               <SectionText justify smaller>
