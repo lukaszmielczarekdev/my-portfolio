@@ -8,16 +8,11 @@ import {
 } from "react-icons/di";
 import { SiStyledcomponents, SiJest } from "react-icons/si";
 import { ToolsList, ToolsItem, ToolsParagraph, ToolsTitle } from "./ToolStyles";
-import {
-  Section,
-  SectionDivider,
-  SectionTitle,
-} from "../../styles/globalComponentsStyles";
+import { Section, SectionTitle } from "../../styles/globalComponentsStyles";
 
 const Tools = () => {
   return (
     <Section column id={"tools"}>
-      <SectionDivider />
       <SectionTitle separate>Tools</SectionTitle>
       <ToolsTitle>Front-End</ToolsTitle>
       <ToolsParagraph>Experience with:</ToolsParagraph>

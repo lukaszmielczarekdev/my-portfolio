@@ -30,7 +30,7 @@ export const NavSection = styled.div`
 // NavTitle
 export const NavigationTitle = styled.div`
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.8);
+  color: ${(props) => props.theme.colors.primaryTransparent};
   margin: 1rem;
   font-size: 1.2rem;
   align-content: center;
@@ -57,11 +57,11 @@ export const IconsSection = styled.div`
 export const NavigationLink = styled.a`
   font-size: 1.2rem;
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.6);
+  color: ${(props) => props.theme.colors.primaryTransparent};
   transition: 0.4s ease;
   margin: 1rem;
   &:hover {
-    color: white;
+    color: ${(props) => props.theme.colors.primary};
     opacity: 1;
     cursor: pointer;
   }

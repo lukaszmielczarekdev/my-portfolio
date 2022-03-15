@@ -20,13 +20,13 @@ export const FooterContainer = styled.section`
 export const LinkItem = styled.a`
   font-size: 1rem;
   line-height: 1.8rem;
-  color: rgba(255, 255, 255, 0.75);
+  color: ${(props) => props.theme.colors.primaryTransparent};
   transition: 0.3s ease;
   position: relative;
   left: 0;
 
   &:hover {
-    color: #fff;
+    color: ${(props) => props.theme.colors.primary};
     transform: scale(1.05);
   }
 
@@ -50,7 +50,7 @@ export const LinkItem = styled.a`
 // Link list
 export const ItemList = styled.ul`
   justify-items: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(30, 30, 30, 0.1);
   display: flex;
   padding: 3rem 0 1.5rem;
 
@@ -94,7 +94,7 @@ export const LinkTitle = styled.h4`
   font-size: 0.8rem;
   line-height: 1.2rem;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.4);
+  color: ${(props) => props.theme.colors.primaryTransparent};
   margin-right: 1rem;
 
   @media ${(props) => props.theme.breakpoints.lg} {
@@ -124,10 +124,10 @@ export const IconsSection = styled.div`
 // Icon
 export const Icon = styled.a`
   transition: 0.4s ease;
-  color: rgba(255, 255, 255, 0.7);
+  color: ${(props) => props.theme.colors.primaryTransparent};
   margin: 0 0.5rem 0 0.5rem;
   &:hover {
-    color: white;
+    color: ${(props) => props.theme.colors.primary};
     opacity: 1;
     transform: scale(1.2);
     cursor: pointer;
@@ -139,7 +139,7 @@ export const FooterParagraph = styled.p`
   margin: 2rem 0 2rem 0;
   font-size: 1rem;
   line-height: 1.3rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: ${(props) => props.theme.colors.primaryTransparent};
   display: flex;
   justify-content: center;
 

@@ -16,18 +16,18 @@ export const WelcomeSection = styled.div`
 
 //Call to action
 export const LinkButton = styled.a`
-  color: rgba(255, 255, 255, 0.75);
-  background: transparent;
+  background-color: ${(props) => props.theme.colors.secondary};
+  color: ${(props) => props.theme.colors.backgroundPrimary};
+  border: 1px solid ${(props) => props.theme.colors.backgroundPrimary};
   font-size: 1rem;
   padding: 0.6rem 0.8rem;
-  border: 1px solid white;
+  border: 1px solid ${(props) => props.theme.colors.secondary};
   border-radius: 10px;
   transition: 0.5s;
   width: 15%;
   width: fit-content;
   &:hover {
-    background: rgba(255, 255, 255, 0.75);
-    color: black;
+    transform: scale(1.1);
   }
 
   @media ${(props) => props.theme.breakpoints.smlandscape} {
@@ -46,10 +46,10 @@ export const LinkButton = styled.a`
 // Icon
 export const Icon = styled.a`
   transition: 0.4s ease;
-  color: rgba(255, 255, 255, 0.7);
+  color: ${(props) => props.theme.colors.primary};
   margin: 0.5rem;
   &:hover {
-    color: white;
+    color: ${(props) => props.theme.colors.secondaryTransparent};
     opacity: 1;
     transform: scale(1.2);
     cursor: pointer;

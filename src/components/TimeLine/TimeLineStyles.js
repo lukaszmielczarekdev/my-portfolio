@@ -23,14 +23,7 @@ export const CarouselTitle = styled.h3`
   align-self: center;
   width: max-content;
   max-width: 100%;
-  background: linear-gradient(
-    120deg,
-    #ffffff 20%,
-    rgba(255, 255, 255, 0.66) 50%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: ${(props) => props.theme.colors.primary};
   margin-bottom: ${(props) => (props.separate ? "1rem" : "0.5rem")};
   padding: ${(props) => (props.smaller ? "0" : "3rem 0 1rem")};
 
@@ -59,7 +52,7 @@ export const CarouselText = styled.p`
   font-weight: 300;
   padding: ${(props) => (props.padding ? "0.5rem" : "0")};
   padding-bottom: 1.5rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: ${(props) => props.theme.colors.primaryTransparent};
 
   @media ${(props) => props.theme.breakpoints.lg} {
     max-width: 650px;

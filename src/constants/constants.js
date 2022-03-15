@@ -35,7 +35,7 @@ export const projects = [
     id: 2,
   },
   {
-    title: "Portfolio (advanced)",
+    title: "Portfolio",
     description:
       "A new version of the portfolio using more advanced solutions. Here, I used tools that I have learned from the time I built the first version of the portfolio.",
     image: portfolio,

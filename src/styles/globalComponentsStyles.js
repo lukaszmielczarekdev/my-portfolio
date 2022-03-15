@@ -31,14 +31,6 @@ export const SectionTitle = styled.h2`
   line-height: ${(props) => (props.main ? "3rem" : "3rem")};
   width: max-content;
   max-width: 100%;
-  background: linear-gradient(
-    120deg,
-    #ffffff 20%,
-    rgba(255, 255, 255, 0.66) 50%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
   margin-top: ${(props) => (props.separate ? "1.5rem" : "0.5rem")};
   margin-bottom: ${(props) => (props.separate ? "1.5rem" : "0.5rem")};
   padding: ${(props) => (props.main ? "4rem 0 1rem" : "0")};
@@ -74,8 +66,7 @@ export const SectionText = styled.p`
   font-size: ${(props) => (props.smaller ? "1.1rem" : "1.2rem")};
   line-height: ${(props) => (props.tall ? "2.5rem" : "2rem")};
   font-weight: 300;
-  padding-bottom: 1.8rem;
-  color: rgba(255, 255, 255, 0.5);
+  padding: ${(props) => (props.description ? "1rem" : "1rem 0 1rem 0")};
   max-width: ${(props) => (props.main ? "50%" : "")};
   text-align: ${(props) => (props.justify ? "justify" : "")};
 
@@ -84,7 +75,6 @@ export const SectionText = styled.p`
     max-width: ${(props) => (props.main ? "50%" : "")};
     font-size: ${(props) => (props.smaller ? "1rem" : "1rem")};
     line-height: 1.5rem;
-    padding-bottom: 1.5rem;
   }
 
   @media ${(props) => props.theme.breakpoints.smlandscape} {
@@ -97,33 +87,5 @@ export const SectionText = styled.p`
     padding: ${(props) => (props.padding ? "1rem" : "")};
     text-align: ${(props) => (props.center ? "center" : "")};
     align-self: center;
-  }
-`;
-
-export const SectionDivider = styled.div`
-  width: 64px;
-  height: 6px;
-  border-radius: 10px;
-  background-color: white;
-  background: ${(props) =>
-    props.colorAlt
-      ? "linear-gradient(270deg, #F46737 0%, #945DD6 100%)"
-      : "linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)"};
-
-  margin: ${(props) => (props.divider ? "4rem 0" : "")};
-
-  @media ${(props) => props.theme.breakpoints.md} {
-    width: 48px;
-    height: 4px;
-  }
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    width: 32px;
-    height: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-    flex-direction: column;
   }
 `;

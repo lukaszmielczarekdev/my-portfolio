@@ -8,7 +8,6 @@ import {
   Section,
   SectionTitle,
   SectionText,
-  SectionDivider,
 } from "../../styles/globalComponentsStyles";
 import {
   CarouselItemContainer,
@@ -19,7 +18,6 @@ import {
 const TimeLine = () => {
   return (
     <Section column id={"about"}>
-      <SectionDivider />
       <SectionTitle separate>About Me</SectionTitle>
       <SectionText padding center>
         Programming is my passion that requires a lot of commitment. I have been

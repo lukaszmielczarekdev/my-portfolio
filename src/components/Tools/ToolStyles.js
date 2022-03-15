@@ -6,7 +6,7 @@ export const ToolsTitle = styled.h4`
   font-size: 1.3rem;
   line-height: 2rem;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: ${(props) => props.theme.colors.primary};
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 
@@ -28,7 +28,7 @@ export const ToolsTitle = styled.h4`
 export const ToolsParagraph = styled.p`
   font-size: 1rem;
   line-height: 1.3rem;
-  color: rgba(255, 255, 255, 0.75);
+  color: ${(props) => props.theme.colors.primaryTransparent};
   display: inline-block;
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -42,7 +42,7 @@ export const ToolsParagraph = styled.p`
 
 // Tools item
 export const ToolsItem = styled.li`
-  color: rgba(255, 255, 255, 0.75);
+  color: ${(props) => props.theme.colors.primaryTransparent};
   font-size: 1rem;
   line-height: 1.2rem;
   display: flex;

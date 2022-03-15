@@ -4,7 +4,6 @@ import {
   ExternalLink,
   GridContainer,
   HeaderThree,
-  Hr,
   Tag,
   TagList,
   TitleContent,
@@ -13,7 +12,6 @@ import {
 } from "./ProjectsStyles";
 import {
   Section,
-  SectionDivider,
   SectionText,
   SectionTitle,
 } from "../../styles/globalComponentsStyles";
@@ -22,7 +20,6 @@ import { projects } from "../../constants/constants";
 const Projects = () => {
   return (
     <Section column id={"projects"}>
-      <SectionDivider />
       <SectionTitle separate>Projects</SectionTitle>
       <GridContainer>
         {projects.map(
@@ -33,9 +30,8 @@ const Projects = () => {
               </a>
               <TitleContent>
                 <HeaderThree bigger>{title}</HeaderThree>
-                <Hr />
               </TitleContent>
-              <SectionText justify smaller>
+              <SectionText justify smaller description>
                 {description}
               </SectionText>
               <div>

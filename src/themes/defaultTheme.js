@@ -5,11 +5,14 @@ export const defaultTheme = {
   },
 
   colors: {
-    primary: "rgb(240, 245, 245)",
-    backgroundPrimary: "rgb(15, 20, 35)",
+    primary: "rgb(30, 30, 30)",
+    primaryTransparent: "rgb(30, 30, 30, 0.7)",
+    secondary: "rgb(100, 150, 215)",
+    backgroundPrimary: "rgb(252, 251, 252)",
     accent: "rgb(255, 195, 120)",
     button: "rgb(0, 110, 185)",
     backgroundSecondary: "rgb(45, 50, 75)",
+    shadow: "rgb(0, 0, 0, 0.3)",
   },
 
   breakpoints: {

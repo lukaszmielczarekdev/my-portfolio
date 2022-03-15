@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Img = styled.img`
   width: 100%;
+  border-radius: 15px;
   object-fit: cover;
   overflow: hidden;
   transition: 0.4s ease;
@@ -24,8 +25,10 @@ export const GridContainer = styled.section`
   }
 `;
 export const BlogCard = styled.div`
-  border-radius: 10px;
-  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+  border-radius: 15px;
+  -webkit-box-shadow: 0 5px 15px -10px ${(props) => props.theme.colors.shadow};
+  -moz-box-shadow: 0 5px 15px -10px ${(props) => props.theme.colors.shadow};
+  box-shadow: 0 5px 15px -10px ${(props) => props.theme.colors.shadow};
   text-align: center;
   padding: 1rem;
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -40,28 +43,13 @@ export const TitleContent = styled.div`
 
 export const HeaderThree = styled.h3`
   font-weight: 500;
-  background: linear-gradient(
-    120deg,
-    #ffffff 20%,
-    rgba(255, 255, 255, 0.66) 50%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: ${(props) => props.theme.colors.primary};
   padding: 1rem 0.2rem;
   font-size: ${(props) => (props.bigger ? "2rem" : "1.5rem")};
 
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: ${(props) => (props.bigger ? "1.5rem" : "1rem")};
   }
-`;
-
-export const Hr = styled.hr`
-  width: 50px;
-  height: 3px;
-  margin: 20px auto;
-  border: 0;
-  background: linear-gradient(270deg, #13adc7 0%, #945dd6 100%);
 `;
 
 export const UtilityList = styled.ul`
@@ -73,16 +61,16 @@ export const UtilityList = styled.ul`
 `;
 
 export const ExternalLink = styled.a`
-  color: rgba(255, 255, 255, 0.75);
+  background-color: ${(props) => props.theme.colors.secondary};
+  color: ${(props) => props.theme.colors.backgroundPrimary};
+  border: 1px solid ${(props) => props.theme.colors.backgroundPrimary};
   font-size: 0.8rem;
   padding: 0.6rem 0.8rem;
-  border: 1px solid white;
   border-radius: 10px;
   transition: 0.5s;
   margin: 0.8rem;
   &:hover {
-    background: rgba(255, 255, 255, 0.75);
-    color: black;
+    transform: scale(1.1);
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -99,7 +87,7 @@ export const TagList = styled.ul`
 `;
 
 export const Tag = styled.li`
-  color: rgba(255, 255, 255, 0.75);
+  color: ${(props) => props.theme.colors.primaryTransparent};
   margin: 0.5rem;
   font-size: 0.8rem;
 
