@@ -6,7 +6,7 @@ import {
   DiHtml5,
   DiJira,
 } from "react-icons/di";
-import { SiStyledcomponents, SiJest } from "react-icons/si";
+import { SiStyledcomponents, SiJest, SiRedux } from "react-icons/si";
 import { ToolsList, ToolsItem, ToolsParagraph, ToolsTitle } from "./ToolStyles";
 import { Section, SectionTitle } from "../../styles/globalComponentsStyles";
 
@@ -35,11 +35,15 @@ const Tools = () => {
           <SiJest size={"1.5rem"} style={{ marginRight: "0.3rem" }} /> Jest
         </ToolsItem>
         <ToolsItem>
+          <SiRedux size={"1.5rem"} style={{ marginRight: "0.3rem" }} />
+          Redux
+        </ToolsItem>
+        <ToolsItem>
           <SiStyledcomponents size={"2rem"} style={{ marginRight: "0.3rem" }} />
           Styled Components
         </ToolsItem>
         <ToolsItem>
-          <DiJira size={"2rem"} />
+          <DiJira size={"1.8rem"} />
           JIRA
         </ToolsItem>
       </ToolsList>

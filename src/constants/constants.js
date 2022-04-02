@@ -48,7 +48,7 @@ export const projects = [
 
 export const TimeLineData = [
   { year: 2020, text: "Started my journey." },
-  { year: 2021, text: "Created the WYIN app with my team (first project)." },
+  { year: 2021, text: "Created the WYIN app with my team." },
   {
     year: 2021,
     text: "Completed postgraduate studies in Software Engineering.",
